@@ -17,8 +17,9 @@ body{
     background-color: var(--dark-blue);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--whity);
+    text-align: center;
 }
 .nav{
     height: 80px;
@@ -62,46 +63,46 @@ body{
     color: var(--lighty-blue);
     cursor: pointer;
 }
-
-
-
-
 h1{
     color: var(--lighty-blue);
     font-size: 3rem;
+    font-weight: 600;
+}
+h2{
+    color: var(--lighty-blue);
+    font-size: 2rem;
     font-weight: 600;
 }
 h3{
     font-size: 2rem;
     font-weight: 600;
 }
+h4{
+    color: black;
+}
 a{
     color: var(--whity);
     text-decoration: none;
 }
-.header-information{
-    display: flex;
+.header-information{  /* Seccion contiene nombre imagen y redes sosciales*/
+    display: flex;  
     align-content: center;
     justify-content: center;
     gap: 2rem;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-bottom: 1rem;
     text-align: center;
-    margin-bottom: 1rem;
 }
-
 #icon{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     padding: 6px;
     background-color: var(--ligthy-gray);
     text-align: center;
     border-radius: 50%;
 }
-.icon{
-    width: 45px;
-}
-.header-text{
+
+.header-text{ 
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -121,9 +122,10 @@ a{
 .parrafo{
     margin-bottom: 1rem;
 }
-.h1{
+.header-h1{
     border-bottom: var(--whity) solid 2px;
     width: 300px;
+    margin-bottom: 1rem;
 }
 .imagen{
     width: 350px;
@@ -135,7 +137,7 @@ a{
 .foto{
     width: 230px;
 }
-.cuentas{
+.cuentas{     /* Cuentas de google y mas */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -154,10 +156,77 @@ a{
 .icon2{
     width: 50px;
 }
-
-
-
-
+/* Seccion main el cuerpo de la pagina */
+.main{
+    display: flex;  
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+    margin: 4rem 2rem;
+    text-align: center;
+}
+.services-container{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 1rem;
+}
+.serv{
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    height: 300px;
+    min-width: 250px;
+    background-color: var(--whity);
+    border-radius: 10px;
+}
+.serv>p{
+    margin: 1rem;
+    color: black;
+}
+.img-services{
+    width: 100px;
+}
+.portafolio{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 1rem;
+    height: 300px;
+}
+.emeplo{
+    width: 300px;
+}
+/* Footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+    gap: 2rem;
+}
+footer>div{
+    width: 250px;
+    height: 200px;
+    gap: 2rem;
+    background-color: var(--whity);
+    color: black;
+    border-radius: 10px;
+    padding: .5rem;
+}
+.foot-img{
+    padding: .25rem;
+    height: 85px;
+}
+.last-text{
+    color: var(--lighty-blue);
+    font-size: 20px;
+    margin: 2rem;
+}
+/*responcive*/
 
 @media screen and (min-width: 768px) {
     .nav-Icono{
@@ -174,24 +243,122 @@ a{
         transition: none;
     }
     .nav-Item:hover{
-        color: #34B0BE;
-        cursor: pointer;
+        color: var(--lighty-blue);
     }
     .nav-Icono:hover{
         cursor: pointer;
     }
-    .header-information{
-       flex-direction: row;
-       margin: 0 auto;
-    }
-    .header-text{
-        text-align: left;
-        padding: 3rem 5rem;
-
-    }
     
 
+
+
+
+    h1{
+        font-size: 60px;
+    }
+    h2,h3,h4{
+        font-size: 30px;
+    }
+    body{
+        font-size: 18px;
+    }
+    .header-information{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+       flex-direction: row;
+       margin: 2rem 15rem 2rem -10rem;
+       padding: 0;
+        z-index: auto;
+    }
+    .header-text{
+        position:relative;
+        display: flow-root;
+        text-align: left;
+        margin-left: -53rem;
+    }
+    .imagen{
+        position: relative;
+        width: 35rem;
+        height: 35rem;
+        padding-left: 0;
+        margin: 0; 
+
+    }
+    .foto{
+        width: 400px;
+    }
+    .cuentas{
+    max-width: 900px;
+    height: 150px;
+    position: relative;
+    margin: 0 0 3rem 15rem;
+    }
+    .header-h1{
+        margin: 1.5rem 0;
+        border-bottom: none;
+    }
+    .header-h3{
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        border-bottom: var(--whity) solid 2px;
+    }
+    .parrafo{
+        margin: 3rem 0;
+    }
+    #icon{
+        width: 60px;
+        height: 60px;
+        padding: 6px;
+    }
+    .icon{
+        width: 100px;
+    }
+    #icon2{
+        width: 200px;
+        height: 90px;
+    }
+    .icon2{
+        width: 80px;
+    }
+    .main{
+        margin: 5rem 15rem 4rem 15rem;
+        text-align: center;
+    }
+    .services-container{
+        overflow: hidden;
+        gap: 2rem;
+    }
+    .portafolio{
+        max-width: 900px;
+        height: 600px;
+        display: grid;
+        overflow: hidden;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .emeplo{
+        width: 250px;
+    }
+    footer{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem 0 1rem 15rem;
+        max-width: 900px;
+        font-size: 18px;
+    }
+    .foot-img{
+        padding: .25rem;
+        height: 75px;
+    }
+    footer>div{
+        max-width: 300px;
+        height: 200px;
+    }
+   
 }
+
 /*
 imagen dar un maz width de 350px momentaneo
 mediacueri de 650px 4.5 rem padding
