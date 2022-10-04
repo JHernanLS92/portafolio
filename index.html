@@ -13,12 +13,12 @@
             <label for="btn-menu"><img src="./assets/img/iconos/menu.svg" alt="" class="nav-Icono"></label>
             
             <ul class="nav-menu">
-                <li class="nav-Item"><a href="">Home</a></li>
-                <li class="nav-Item"><a href="">Servicios</a></li>
-                <li class="nav-Item"><a href="">Acerca de mi</a></li>
-                <li class="nav-Item"><a href="">Mis habilidades</a></li>
-                <li class="nav-Item"><a href="">Mi portafolio</a></li>
-                <li class="nav-Item"><a href="">Contacto</a></li>
+                <li class="nav-Item"><a href="./index.html">Home</a></li>
+                <li class="nav-Item"><a href="#servicios">Servicios</a></li>
+                <li class="nav-Item"><a href="#About">Acerca de mi</a></li>
+                <li class="nav-Item"><a href="#Habilidades">Mis habilidades</a></li>
+                <li class="nav-Item"><a href="#port">Mi portafolio</a></li>
+                <li class="nav-Item"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <section class="header-information">
@@ -66,13 +66,13 @@
             </a>
         </section>
         <main class="main">
-            <h1>Acerca de mi</h1>  
-            <section class="main-about">  
+            <h1 id="About">Acerca de mi</h1>  
+            <section class="main-about" >  
             
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam illo perferendis molestiae quo laboriosam ex architecto assumenda maiores beatae excepturi, earum non corrupti ratione magnam minima neque atque facilis dolorem.</p>  
             </section>
-            <h1 >Servicios</h1>               
-                <div class="services-container">
+            <h1 id="servicios">Servicios</h1>               
+                <div class="services-container" >
                     <dvi class="serv">
                         <img src="./assets/img/iconos/pencil.svg" alt="" class="img-services">
                         <h4>UX/UI Design</h4>
@@ -91,21 +91,50 @@
                 </div>
      
             <section class="habilitis">
-                <h1>Mis habilidades</h1>
-                
+                <h1  id="Habilidades">Mis habilidades</h1>
+                <div class="habilidades">
+                   <h5>Ingles</h5> 
+                   <div class="barra">
+                    <div class="progreso" style=" --w:72%"></div>
+                   </div>
+                </div>
+                <div class="habilidades">
+                    <h5>CSS</h5>
+                    <div class="barra">
+                        <div class="progreso" style="--w:40%" ></div>
+                    </div>
+                </div>
+                <div class="habilidades">
+                    <h5>HTML</h5>
+                    <div class="barra">
+                        <div class="progreso" style="--w:60%" ></div>
+                    </div>
+                </div>
+                <div class="habilidades">
+                    <h5>JS</h5>
+                    <div class="barra">
+                        <div class="progreso" style="--w:40%" ></div>
+                    </div>
+                </div>
+                <div class="habilidades">
+                    <h5>React</h5>
+                    <div class="barra">
+                        <div class="progreso" style="--w:10%" ></div>
+                    </div>
+                </div>
             </section>
-            <h1>Mi portafolio</h1>
-            <div class="portafolio">
+            <h1 id="port">Mi portafolio</h1>
+            <div class="portafolio" >
                 <img src="./assets/img/Logos- Imágenes/ejemplo1.jpg" alt="" class="emeplo">
                 <img src="./assets/img/Logos- Imágenes/ejemplo2.jpg" alt="" class="emeplo">
                 <img src="./assets/img/Logos- Imágenes/ejemplo3.jpg" alt="" class="emeplo">
                 <img src="./assets/img/Logos- Imágenes/ejemplo5.jpg" alt="" class="emeplo">
             </div>
         </main>
-        <h1>Contacto</h1>
+        <h1 id="contacto">Contacto</h1>
         <footer>
             
-            <div class="phone">
+            <div class="phone" >
                 <img src="./assets/img/iconos/phone.svg" alt="" class="foot-img">
                 <h4>Número Celular</h4>
                 <p>4191202173</p>
