@@ -118,9 +118,12 @@ h3{
 .social-icon{
     background-color: var(--ligthy-gray);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     padding-top: .5rem;
+}
+.img-icon{
+    width: 40px;
 }
 .cuentas{
     min-width: 300px;
@@ -385,6 +388,10 @@ h4{
       }
       .sevis-img{
         overflow: hidden;
+    }
+    .main-portafolio{
+        margin: 0 auto;
+        max-width: 700px;
     }
 .portafolio{
     width: 100%;
