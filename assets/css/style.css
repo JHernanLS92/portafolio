@@ -13,6 +13,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+section[id]{
+    scroll-margin-top: 70px;
+}
 body{
     background-color: var(--dark-blue);
     font-family: 'Montserrat', sans-serif;
