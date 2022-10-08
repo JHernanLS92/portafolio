@@ -352,6 +352,7 @@ h4{
             margin: 0 auto;
             text-align: center;
             position: relative;
+            z-index: -1;
       }
       .container-img{
         position: relative;
